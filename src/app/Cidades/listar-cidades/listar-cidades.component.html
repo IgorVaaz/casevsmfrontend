@@ -1,0 +1,32 @@
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Cidades</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOME</th>
+                        <th>UF</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cidade of cidades" class="text-center">
+                        <td align=left>{{cidade.cidadeId}}</td>
+                        <td align=left>{{cidade.nomeCidade}}</td>
+                        <td align=left>{{cidade.uf}}</td>
+                        <td></td>
+                        <td align=left>
+
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Clientes</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOME</th>
+                        <th>CPF/CNPJ</th>
+                        <th>EMAIL</th>
+                        <th>BAIRRO</th>
+                        <th>ENDERECO</th>
+                        <th>NUMERO</th>
+                        <th>TELEFONE</th>
+                        <th>CEP</th>
+                        <th>STATUS</th>
+                        <th>CIDADE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cliente of clientes" class="text-center">
+                        <td>{{cliente.clienteId}}</td>
+                        <td align=left>{{cliente.nome}}</td>
+                        <td align=left>{{cliente.cpf}}</td>
+                        <td align=left>{{cliente.email}}</td>
+                        <td align=left>{{cliente.bairro}}</td>
+                        <td align=left>{{cliente.endereco}}</td>
+                        <td align=left>{{cliente.numero}}</td>
+                        <td align=left>{{cliente.telefone}}</td>
+                        <td align=left>{{cliente.cep}}</td>
+                        <td align=left>{{cliente.descricaoStatus}}</td>
+                        <td align=left>{{cliente.cidade.nomeCidade}}</td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+</div>
